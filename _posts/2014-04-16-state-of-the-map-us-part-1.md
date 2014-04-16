@@ -3,7 +3,7 @@ icon: fa-map-marker
 layout: post
 title: What I learned at State of The Map US
 subtitle: Part 1
-description: covering my impressions as well as day 1 of talks at sotmus
+description: covering my initial impressions as well as day 1 of talks at sotmus
 ---
 [![SOTMUS](/assets/img/logo.png)](http://stateofthemap.us){:target="_blank"}
 
