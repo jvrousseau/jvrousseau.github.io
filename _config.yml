@@ -1,10 +1,16 @@
+safe: true
+lsi: false
+pygments: true
+markdown: kramdown
+kramdown:
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: nil
+    coderay_css: class
 source: .
 destination: ./_site
-
-future: false
-lsi: true
-markdown: rdiscount
-pygments: true
 permalink: /:year/:month/:day/:title
-
-exclude: ['Rakefile', 'README.markdown', 'config.rb']
+exclude: ['README.md', '.gitignore', 'Gemfile', 'Gemfile.lock']
+name: rousseau.io
+description: rousseau.io
+url: http://rousseau.io

@@ -1,13 +1,20 @@
 ---
 layout: default
 title: rousseau.io
-description: Jordan Rousseau
 ---
-
-<div id="listing">
-  <ul>
+<div class="grid-items" id="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+        <a href="{{ post.url }}" class="grid-item">
+            <i class="fa {{ post.icon }} fa-2x"></i>
+            <div class='title'>{{ post.title }}</div>
+            {% if post.subtitle %}
+            <div class='subtitle'>({{ post.subtitle }})</div>
+            {% endif %}
+            <hr/>
+            <div class='description'>{{ post.description }}</div>
+            <div class='date'>{{ post.date | date_to_string }}</div>
+        </a>
     {% endfor %}
-  </ul>
+    <div class="right-cover"></div>
+    <div class="bottom-cover"></div>
 </div>
