@@ -7,7 +7,7 @@ description: covering day 2 of the talks at sotmus
 ---
 [![SOTMUS](/assets/img/logo.png)](http://stateofthemap.us)
 
-This is part two of two of what I learned at SOTMUS. Part one can be found [here](/2014/04/15/state-of-the-map-us-part-1/)
+This is part two of two of what I learned at SOTMUS. Part one can be found [here](/2014/04/16/state-of-the-map-us-part-1/)
 
 I want to add some more posts later diving deeper into some topics that interested me.
 
