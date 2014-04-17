@@ -1,0 +1,94 @@
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.outer-container {
+    @include outer-container;
+}
+
+.big-grid {
+    @include span-columns(12);
+}
+
+.grid-items {
+  $grid-item-background: desaturate($secondary-color, 30);
+  $grid-item-colors: $primary-color;
+  $grid-item-border-size: $border-size;
+  $grid-item-color: lighten($background-color, 10);
+  $grid-item-height: 18em;
+
+  @include clearfix;
+
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    position: relative;
+    height: $grid-item-height;
+    background: $grid-item-background;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    padding: 0.5em;
+    padding-top: 0.5em;
+    margin-left: -1.5px;
+    text-align: center;
+    cursor: pointer;
+
+    @include media($large-screen) {
+      @include grid-item-columns(3);
+    }
+
+    @include media($medium-screen) {
+      @include grid-item-columns(4);
+    }
+
+    background-color: $grid-item-colors;
+    box-shadow: inset 0px 0px 1px 2px darken($grid-item-colors, 10);
+    &:hover {
+      background-color: darken($grid-item-colors, 10);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+    }
+    img {
+        display: block;
+        height: 3em;
+        margin: auto;
+        margin-bottom: 1em;
+      }
+
+    i {
+        color: $background-color;
+    }
+
+    .title {
+        color: $grid-item-color;
+        font-size: 24px;
+        font-style: bold;
+    }
+    .subtitle {
+        color: transparentize($grid-item-color, .1);
+        font-size: 16px;
+        font-style: italic;
+    }
+    .description {
+        color: transparentize($grid-item-color, .3);
+        font-size: 18px;
+    }
+    .date {
+        margin: auto;
+        color: transparentize($grid-item-color, .5);
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include media($medium-screen) {
+          max-width: 70%;
+        }
+      }
+  }
+
+  hr {
+      margin: 0;
+  }
+}
