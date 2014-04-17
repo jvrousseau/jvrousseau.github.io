@@ -1721,6 +1721,10 @@ dl {
         font-size: 3.5em;
         font-weight: normal;
         margin-bottom: .2em; }
+        @media screen and (max-width: 580px) {
+          .hero .hero-inner .hero-copy h1 {
+            font-size: 2.4em;
+            max-width: 40%; } }
       .hero .hero-inner .hero-copy p {
         margin: auto;
         margin-bottom: 3em;
