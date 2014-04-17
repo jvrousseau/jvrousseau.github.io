@@ -43,7 +43,7 @@ Here are some random thoughts on some of the presentations. I would encourage yo
 ####[More Open](http://stateofthemap.us/session/more-open/){:target="_blank"} - [Alex Barth](https://twitter.com/lxbarth){:target="_blank"}
 * there is a lot passion within the OSM community
 * like any other organization, there are different thoughts on licensing
-* lawyers hate ambiguity
+* lawyers are conservative with ambiguity
 * share-alike clause of ODbL introduces incompatibilities
 * you shouldn't have to change your licensing just to be able to derive data from and publicly use OSM data.
 * attended the birds of a feather session on this...will likely have a separate post on this
