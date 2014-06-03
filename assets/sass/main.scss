@@ -12,8 +12,8 @@ $fa-font-path: "../sass/font-awesome/fonts";
 // ----------- Variables ------------
 // ----------------------------------
 
-$small-screen: new-breakpoint(max-width 580px 12);
-$medium-screen: new-breakpoint(min-width 581px max-width 1240px 12);
+$small-screen: new-breakpoint(max-width 800px 12);
+$medium-screen: new-breakpoint(min-width 801px max-width 1240px 12);
 $large-screen: new-breakpoint(min-width 1241px 12);
 
 @mixin grid-item-columns($columns) {
@@ -26,7 +26,6 @@ $tertiary-color: #ccc096;
 $background-color: #e1e1e1;
 
 $border-size: 9px;
-
 $font-stack: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 // ----------------------------------
 // -------- General Styles ----------
@@ -49,9 +48,6 @@ h4 {
     font-weight: normal;
 }
 
-@mixin grid-item-columns($columns) {
-  width: (100% / 12) * $columns;
-}
 
 a {
     color: darken($secondary-color, 20);

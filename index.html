@@ -2,9 +2,19 @@
 layout: default
 title: rousseau.io
 ---
+{% assign post_count = 0; %}
+{% assign switch = 0; %}
 <div class="grid-items" id="posts">
     {% for post in site.posts %}
+        {% assign post_count = post_count|plus:1 %}
+        {% if post_count == 9 or post_count == 5 %}
+        <a href="{{ post.url }}" class="grid-item grid-item-big">
+        {% else %}
         <a href="{{ post.url }}" class="grid-item">
+        {% endif %}
+        {% if post_count == 10 %}
+        {% assign post_count = 0 %}
+        {% endif %}
             <i class="fa {{ post.icon }} fa-2x"></i>
             <div class='title'>{{ post.title }}</div>
             {% if post.subtitle %}
