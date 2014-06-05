@@ -2,6 +2,7 @@
 layout: default
 comments: true
 ---
+<link href='/assets/justifiedGrid/justifiedGrid.css' rel='stylesheet' type='text/css' />
 <div id="home-link"><a href="/"><i class="icon-double-angle-left"></i></a></div>
 <div id="post">
   <h1>{{ page.title }}</h1>
@@ -11,10 +12,19 @@ comments: true
   {{ content }}
 
 
-  {% for photo in page.photos %}
+  <div class="photo-gallery" id="gallery">
+    {% for photo in page.photos %}
 
-    <a href="{{ photo.link }}" target='_blank'>
-        <img src="{{ photo.src }}" />
-    </a>
-  {% endfor %}
+      <a href="{{ photo.link }}" target='_blank'>
+          <img src="{{ photo.src }}" />
+      </a>
+    {% endfor %}
+  </div>
 </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src='/assets/justifiedGrid/justifiedGrid.js' ></script>
+<script type="text/javascript">
+    $(".photo-gallery").justifiedGallery({
+        "rowHeight": "350px"
+    });
+</script>

@@ -17,7 +17,12 @@ $medium-screen: new-breakpoint(min-width 801px max-width 1240px 12);
 $large-screen: new-breakpoint(min-width 1241px 12);
 
 @mixin grid-item-columns($columns) {
-  width: (100% / 12) * $columns;
+  @if($columns == 4) {
+    width: (100% / 12) * $columns - 0.75%;
+  }
+  @else {
+    width: (100% / 12) * $columns - 1.00%;
+  }
 }
 
 $primary-color: #a2cc96;
