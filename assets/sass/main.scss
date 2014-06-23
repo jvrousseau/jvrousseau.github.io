@@ -12,16 +12,16 @@ $fa-font-path: "../sass/font-awesome/fonts";
 // ----------- Variables ------------
 // ----------------------------------
 
-$small-screen: new-breakpoint(max-width 800px 12);
-$medium-screen: new-breakpoint(min-width 801px max-width 1240px 12);
+$small-screen: new-breakpoint(max-width 767px 12);
+$medium-screen: new-breakpoint(min-width 768px max-width 1240px 12);
 $large-screen: new-breakpoint(min-width 1241px 12);
 
 @mixin grid-item-columns($columns) {
   @if($columns == 4) {
-    width: (100% / 12) * $columns - 0.75%;
+    width: (100% / 12) * $columns - 1.00%;
   }
   @else {
-    width: (100% / 12) * $columns - 1.00%;
+    width: (100% / 12) * $columns - 1.20%;
   }
 }
 

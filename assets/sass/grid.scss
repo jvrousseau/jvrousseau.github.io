@@ -49,6 +49,7 @@
     @include media($medium-screen) {
       @include grid-item-columns($grid-item-columns);
     }
+
     @for $i from 1 to 100 {
 // assign colors from $grid-item-colors list
       &:nth-child(#{$i}) {
