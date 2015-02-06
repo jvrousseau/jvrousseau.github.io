@@ -42,6 +42,7 @@ $font-stack: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, s
 body {
     font-family: $font-stack;
     background: $background-color;
+    margin: 0px;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-stack;
