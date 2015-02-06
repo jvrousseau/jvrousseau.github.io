@@ -29,6 +29,13 @@
     		<div class="hero-copy">
                 <a href='/'><h1>rousseau.io</h1></a>
                 <i class="fa fa-code fa-3x" alt=""></i>
+                <div>
+                {% if page.url == '/index.html' %}
+                    <a href="/presentations.html">presentations</a>
+                {% else %}
+                    <a href="/index.html">posts</a>
+                {% endif %}
+                </div>
     		</div>
             <div class="bottom-row">
                 <a href="http://twitter.com/jvrousseau" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
@@ -36,13 +43,6 @@
                 <a href="https://flic.kr/ps/8y86a" target="_blank"><i class="fa fa-flickr fa-2x"></i></a>
                 <a href="https://www.facebook.com/jv.rousseau" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
                 <a href="https://www.linkedin.com/pub/jordan-rousseau/43/66a/9aa" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            </div>
-            <div class="pull-to-the-right">
-            {% if page.url == '/index.html' %}
-                <a href="presentations.html">presentations</a>
-            {% else %}
-                <a href="index.html">posts</a>
-            {% endif %}
             </div>
     	</div>
     </div>
