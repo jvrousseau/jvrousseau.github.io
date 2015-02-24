@@ -10,7 +10,7 @@ description: holy hexgrid!
 
 I have blogged about turfjs[before](http://rousseau.io/2014/08/27/turfjs-in-mapbox.js/). Since then, I have been playing around with some large datasets to see how turfjs performs at scale.
 
-At[WDT](http://wdtinc.com), we have a decent amount of current observations at our disposal. I took the[global dataset](http://rousseau.io/okcjs-mapping/demo/turf-obs/obs.html)and created a[hexgrid](http://rousseau.io/okcjs-mapping/demo/turf-obs/hex.html)map. As you can see, the hexgrid map loads _incredibly_ slow. In fact, I had to trim the domain down to North & Central America and increase the hexgrid resolution to 1 degree so it would load a bit __faster__.
+At[WDT](http://wdtinc.com), we have a decent amount of current observations at our disposal. I took the[global dataset](http://rousseau.io/okcjs-mapping/demo/turf-obs/obs.html)of observations and created a[hexgrid](http://rousseau.io/okcjs-mapping/demo/turf-obs/hex.html)map. As you can see, the hexgrid map loads _incredibly_ slow. In fact, I had to trim the domain down to North & Central America and increase the hexgrid resolution to 1 degree so it would load a bit __faster__.
 
 Morgan Herlocker (creator of turfjs) tweeted these out around the time I was tinkering with global obs that helped point me into a new direction:
 
