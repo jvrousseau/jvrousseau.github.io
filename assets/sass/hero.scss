@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    padding-bottom: 4em;
+    padding-bottom: 1.5em;
 
     .hero-logo img {
         height: 3em;
@@ -19,6 +19,7 @@
         @include outer-container;
         @include clearfix;
         padding: 3em;
+        padding-top: 0.5em;
         margin: auto;
         text-align: center;
         color: $hero-color;

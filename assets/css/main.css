@@ -2683,7 +2683,7 @@ dl {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  padding-bottom: 4em; }
+  padding-bottom: 1.5em; }
   .hero .hero-logo img {
     height: 3em;
     margin-bottom: 1em; }
@@ -2694,6 +2694,7 @@ dl {
     margin-right: auto;
     *zoom: 1;
     padding: 3em;
+    padding-top: 0.5em;
     margin: auto;
     text-align: center;
     color: #e1e1e1; }
