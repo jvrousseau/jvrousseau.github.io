@@ -16,7 +16,7 @@ So I have a large dataset of lightning strikes combined with a tool that takes l
 
 My first step was to take those files and create some GeoJSON. I took the quick and dirty approach. So I brute forced converted ~180M strikes from compressed CSV to single day GeoJSON files. The GeoJSON was not valid (to spec), but tippecanoe requires an array of features.
 
-So here comes the work of tippecanoe. There are some other [options](https://github.com/mapbox/tippecanoe#options){:target="_blank"} that are available for usage. The following command is what I settled on to create this dataset.
+So here comes the work of tippecanoe. There are some other [options](https://github.com/mapbox/tippecanoe#options){:target="_blank"} that are available for usage. The following command is what I settled on to create this dataset:
 
 `cat json/201305* | tippecanoe -z15 -g2 -o may-2013-ltg.mbtiles`
 
