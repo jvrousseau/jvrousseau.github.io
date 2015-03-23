@@ -1,6 +1,6 @@
 safe: true
 lsi: false
-highlighter: true
+pygments: true
 markdown: kramdown
 kramdown:
   use_coderay: true
