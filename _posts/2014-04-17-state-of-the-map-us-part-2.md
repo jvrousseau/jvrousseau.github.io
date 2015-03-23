@@ -38,14 +38,14 @@ Here are some random thoughts on some of the presentations. As with the previous
 ####[Advanced CartoCSS Tricks](http://stateofthemap.us/session/advanced-cartocss-tricks/){:target="_blank"} - [Kate Watkins](https://twitter.com/kateyw){:target="_blank"}, Seth Fitzsimmons and [Alan McConchie](https://twitter.com/mappingmashups){:target="_blank"}
 * using modulo to randomize a slight pitch of the labels were pretty cool
 * I really dig the color scheme of the pinterest map
-* the nuggetts of cartocss given (and explained) in the presentation was helpful
+* the nuggets of cartocss given (and explained) in the presentation was helpful
 * when designing your own map in tilemill2, just remember that it's the *ENTIRE* map
 * really digging the patterns on backgrounds using the white and alpha quadrants
 
 ####[Designing OpenStreetMap](http://stateofthemap.us/session/designing-openstreetmap/){:target="_blank"} - [Nicki Dlugash](https://twitter.com/nickidlugash){:target="_blank"}
 * function and context are ridiculously important to cartography
 * mapbox streets uses a subset of OSM data
-* it looks like mapbox is prepping a map soley for driving routes
+* it looks like mapbox is prepping a map solely for driving routes
 * the designs showed made me think about what is absolutely necessary on a weather map
     * need to get rid of or deemphasize the unnecessary basemap data, so the weather data will pop
 * mapbox outdoors was demoed...very cool...love the elevation lines
@@ -59,7 +59,7 @@ Here are some random thoughts on some of the presentations. As with the previous
 * working on FileGDB to vector tiles is awesome!
 * delta and zig zag encoding to make the file size smaller is just brilliant.
 * overzooming is great, but I wonder if there is a agreed upon zoom level to resolution ie 5km resolution data can stop at zoom level X
-* compositing on different overzoomed datasets is very intersting...makes a lot of sense
+* compositing on different overzoomed datasets is very interesting...makes a lot of sense
 * shapefile -> vector tile conversion 2000 tiles/second and dropping the dataset size down ~350MB WOW
 * [OSM Bright Style](https://github.com/mapbox/osm-bright.tm2){:target="_blank"} open sourced...will definitely play with this.
 * another plug on Browser/WebGL rendering coming soon...I can't wait to get my hands on that!

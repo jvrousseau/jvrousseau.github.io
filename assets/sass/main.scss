@@ -54,10 +54,12 @@ h4 {
     font-weight: normal;
 }
 
+a.grid-item  {
+    margin: 0.4em;
+}
 
 a {
     color: darken($secondary-color, 20);
-    margin: 0.4em;
 }
 
 a:hover {

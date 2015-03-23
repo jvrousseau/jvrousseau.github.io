@@ -2787,9 +2787,11 @@ h4 {
   font-style: italic;
   font-weight: normal; }
 
-a {
-  color: #91aa53;
+a.grid-item {
   margin: 0.4em; }
+
+a {
+  color: #91aa53; }
 
 a:hover {
   color: #748842; }
