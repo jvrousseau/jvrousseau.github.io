@@ -24,9 +24,8 @@ So the waiting game began. It doesn't take too long (5 or 6 hours) to process wi
 
 So that worked, and I tweeted out a picture of it:
 
-<blockquote class="twitter-tweet" lang="en"><p>just a month of lightning (&gt; 80 million strikes). processed with tippecanoe and styled with <a href="https://twitter.com/hashtag/mapbox?src=hash">#mapbox)</a> studio. <a href="http://t.co/HYkW1HSiI9">pic.twitter.com/HYkW1HSiI9</a></p>&mdash; Jordan Rousseau (@jvrousseau) <a href="https://twitter.com/jvrousseau/status/578223533618163712">March 18, 2015)</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>just a month of lightning (&gt; 80 million strikes). processed with tippecanoe and styled with <a href="https://twitter.com/hashtag/mapbox?src=hash">#mapbox</a> studio. <a href="http://t.co/HYkW1HSiI9">pic.twitter.com/HYkW1HSiI9</a></p>&mdash; Jordan Rousseau (@jvrousseau) <a href="https://twitter.com/jvrousseau/status/578223533618163712">March 18, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 But there were some weird stuff that I couldn't get past. The concentration of the data was in the US (midwest). This was not the only area in the world that had a large amount of lightning strikes during May, 2013. Tippecanoe's progressive disclosure was too aggressive for non-concentrated areas of lightning.
 
