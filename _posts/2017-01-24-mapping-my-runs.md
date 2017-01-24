@@ -28,7 +28,7 @@ From the file I use [togeojson](https://github.com/mapbox/togeojson){:target="_b
 
 Using Turf [meta](http://turfjs.org/docs.html#coordall){:target="_blank"}, I merged the parallel arrays to an array of objects. 
 
-From there I create segments of the run by grabbing the `n` and `n+1` datapoint. I wanted to minimize overlapping segments, so I used [`turf.distance`](http://turfjs.org/docs.html#distance){:target="_blank"} and [`turf.lineSliceAlong`](http://turfjs.org/docs.html#lineslicealong){:target="_blank"} to crop out 2 feet of each segment. After that, all  the segments are stuffed into a [feature collection](http://geojson.org/geojson-spec.html#feature-collection-objects){:target="_blank"}.
+From there I create segments of the run by grabbing the n and n+1 datapoint. I wanted to minimize overlapping segments, so I used [turf.distance](http://turfjs.org/docs.html#distance){:target="_blank"} and [turf.lineSliceAlong](http://turfjs.org/docs.html#lineslicealong){:target="_blank"} to crop out 2 feet of each segment. After that, all  the segments are stuffed into a [feature collection](http://geojson.org/geojson-spec.html#feature-collection-objects){:target="_blank"}.
 
 ![okc1](/assets/img/run/okc.png){:width="100%"}<br/>
 <sub><sup>*OKC Memorial in 2016*</sup></sub>
