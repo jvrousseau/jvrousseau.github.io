@@ -10,9 +10,9 @@ description: a quick hack to see my runs.
 ![okc](/assets/img/run/okc.png){:width="100%"}<br/>
 <sub><sup>*OKC Memorial in 2016*</sup></sub>
 
-I run. Well, I attempt to run, but it's fun! There are plenty of posts that walk through how to map out runs. [Catalina marathon](https://www.mapbox.com/blog/run-the-catalina-eco-marathon-in-3d/){:target="_blank"}, [Runkeeper routes](https://www.mapbox.com/blog/runkeeper-routes){:target="_blank"}, and [the one that got me hooked](https://www.mapbox.com/blog/2012-08-28-running-maps/){:target="_blank"} are some of the ones that come to mind.
+I run...well, I attempt to run, but it's fun for me! There are plenty of posts that walk through how to map out runs. [Catalina marathon](https://www.mapbox.com/blog/run-the-catalina-eco-marathon-in-3d/){:target="_blank"}, [Runkeeper routes](https://www.mapbox.com/blog/runkeeper-routes){:target="_blank"}, and [the one that got me hooked](https://www.mapbox.com/blog/2012-08-28-running-maps/){:target="_blank"} are some of the ones that come to mind.
 
-I played around with the entire dataset of my runs a while back (which was fun): 
+I played around with the entire dataset of my runs a while back: 
 
 <iframe width='100%' height='450px' frameBorder='0' src='https://api.mapbox.com/v4/jvrousseau.lgbcme65/zoompan,attribution,share.html?access_token=pk.eyJ1IjoianZyb3Vzc2VhdSIsImEiOiJYYUNlcVRZIn0.lp0867Jn5ynlj72kMwICSA#13/35.2017/-97.4476'></iframe>
 
