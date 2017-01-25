@@ -18,17 +18,17 @@ I played around with the entire dataset of my runs a while back (which was fun):
 
 However, the Catalina marathon blog post inspired me to start visualizing my individual runs. 
 
-I started with a fundamental thought of "automated" as much as possible. From the point I export a run from [Strava](https://www.strava.com/){:target="_blank"}, [Runkeeper](https://runkeeper.com){:target="_blank"}, or your tracker of choice as a [GPX](http://www.topografix.com/gpx.asp){:target="_blank"} file all the way to viewing the dataset on a map.
+I started with a fundamental thought of "automated" as much as possible. Starting with exporting a run from [Strava](https://www.strava.com/){:target="_blank"}, [Runkeeper](https://runkeeper.com){:target="_blank"}, or your tracker of choice as a [GPX](http://www.topografix.com/gpx.asp){:target="_blank"} file all the way to viewing the dataset on a map.
 
 ![tulsa1](/assets/img/run/tulsa.png){:width="100%"}<br/>
 <sub><sup>*Tulsa Route-66 in 2014*</sup></sub>
 
-From the file I use [togeojson](https://github.com/mapbox/togeojson){:target="_blank"} to spit out a geojson version of the run. When uploading the tileset to Mapbox, I did not have much control over the metadata (elevation, heart rate, segment time, etc.). The output of togeojson are [parallel arrays](https://en.wikipedia.org/wiki/Parallel_array){:target="_blank"}: one of the arrays is the [linestring](http://geojson.org/geojson-spec.html#linestring){:target="_blank"} of the route and the other arrays are the metadata sitting in the properties object of the [feature](http://geojson.org/geojson-spec.html#feature-objects){:target="_blank"}. In comes [Turf](http://turfjs.org/){:target="_blank"} to help out.
+Using [togeojson](https://github.com/mapbox/togeojson){:target="_blank"}, I convert the GPX file a geojson format of the run. When uploading the tileset to Mapbox, I did not have much control over the metadata (elevation, heart rate, segment time, etc.). The output of togeojson are [parallel arrays](https://en.wikipedia.org/wiki/Parallel_array){:target="_blank"}: one of the arrays is the [linestring](http://geojson.org/geojson-spec.html#linestring){:target="_blank"} of the route and the other arrays are the metadata sitting in the properties object of the [feature](http://geojson.org/geojson-spec.html#feature-objects){:target="_blank"}. In comes [Turf](http://turfjs.org/){:target="_blank"} to help out.
 
 
-Using Turf [meta](http://turfjs.org/docs.html#coordall){:target="_blank"}, I merged the parallel arrays to an array of objects. 
+Using Turf [meta](http://turfjs.org/docs.html#coordall){:target="_blank"}, I merged the parallel arrays to an array of objects (datapoints). 
 
-From there I create segments of the run by grabbing the n and n+1 datapoint. I wanted to minimize overlapping segments, so I used [turf.distance](http://turfjs.org/docs.html#distance){:target="_blank"} and [turf.lineSliceAlong](http://turfjs.org/docs.html#lineslicealong){:target="_blank"} to crop out 2 feet of each segment. After that, all  the segments are stuffed into a [feature collection](http://geojson.org/geojson-spec.html#feature-collection-objects){:target="_blank"}.
+I create segments of the run by grabbing the n and n+1 datapoints. I wanted to minimize overlapping segments, so I used [turf.distance](http://turfjs.org/docs.html#distance){:target="_blank"} and [turf.lineSliceAlong](http://turfjs.org/docs.html#lineslicealong){:target="_blank"} to crop out 2 feet of each segment. After that, all  the segments are stuffed into a [feature collection](http://geojson.org/geojson-spec.html#feature-collection-objects){:target="_blank"}.
 
 ![okc1](/assets/img/run/okc.png){:width="100%"}<br/>
 <sub><sup>*OKC Memorial in 2016*</sup></sub>
